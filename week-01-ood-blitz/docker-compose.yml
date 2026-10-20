@@ -1,0 +1,7 @@
+services:
+  php:
+    image: composer:2.7
+    working_dir: /app/php
+    volumes:
+      - .:/app
+    command: php src/run.php
