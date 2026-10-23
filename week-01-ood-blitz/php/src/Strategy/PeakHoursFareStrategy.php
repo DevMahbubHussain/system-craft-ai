@@ -3,8 +3,7 @@
 declare(strict_types=1);
 
 namespace App\ParkingLot\Strategy;
-use App\ParkingLot\Strategy\BaseFareStrategy;
-use App\ParkingLot\Strategy\FareStrategy;
+
 use App\ParkingLot\Ticket\Ticket;
 
 class PeakHoursFareStrategy implements FareStrategy
