@@ -1,0 +1,1 @@
+{"version":2,"defects":[],"times":{"Tests\\Elevator\\ElevatorSystemTest::testSafetyHazardThrowsExceptionWhenMovingWithOpenDoor":0.004,"Tests\\Elevator\\ElevatorSystemTest::testStrategySelectsClosestIdleElevator":0.009,"Tests\\Elevator\\ElevatorSystemTest::testElevatorArrivesAtFloorAndTransitionsToIdle":0.002}}
