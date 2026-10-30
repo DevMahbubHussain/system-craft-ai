@@ -15,7 +15,8 @@
             "App\\MovieBooking\\": "src/MovieBooking/",
             "App\\VendingMachine\\": "src/VendingMachine/",
             "App\\Elevator\\": "src/Elevator/",
-            "App\\ShoppingCart\\": "src/ShoppingCart/"
+            "App\\ShoppingCart\\": "src/ShoppingCart/",
+            "App\\ATM\\": "src/ATM/"
         }
     },
     "autoload-dev": {

@@ -1,1 +1,18 @@
+# Environment & Secret files
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Vendor & Dependencies
+/vendor/
+
+# Testing & Logs
+.phpunit.result.cache
+*.log
+/vendor
+
+# Other
+.DS_Store
 vendor/

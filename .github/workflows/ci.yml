@@ -1,4 +1,4 @@
-name: OOD Sprint CI Pipeline
+name: CI Pipeline
 
 on:
   push:
@@ -13,18 +13,18 @@ on:
       - '.github/workflows/ci.yml'
 
 jobs:
-  php-tests:
-    name: PHP 8.3 Quality & Test Suite
+  test:
+    name: PHP 8.3 Test Suite
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: week-01-ood-blitz/php
 
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup PHP Environment
+      - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
@@ -34,8 +34,8 @@ jobs:
       - name: Validate composer.json
         run: composer validate --strict
 
-      - name: Install Composer Dependencies
-        run: composer install --prefer-dist --no-progress
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-interaction --no-progress
 
-      - name: Run PHPUnit Tests
+      - name: Run PHPUnit tests
         run: vendor/bin/phpunit --testdox
